@@ -1,4 +1,4 @@
-const toDoTask = function (title, description,dueDate, priority) {
+const toDoTask = function (title, description,dueDate, priority, project= "My projects", status = "Not Complete") {
     const getTitle = () => title;
     const setTitle = (newTitle) => title = newTitle; 
 
@@ -12,10 +12,20 @@ const toDoTask = function (title, description,dueDate, priority) {
     const setpriority = (newPriority) => priority = newPriority;
 
     const printTask = ()=> "Title: "+getTitle() + ", Description: "+getDescription()+
-        ", due Date: "+ getdueDate() + ", Priority: "+getpriority();
+        ", due Date: "+ getdueDate() + ", Priority: "+getpriority()+ " , Project: "+
+        getProject() + " , Status: "+getStatus();
+
+    const getProject = () => project;
+    const setProject = (newProject) => project = newProject;
+     
+    const getStatus = () => status;
+    const toggleStatus = () => {
+        status = (status == "Not Complete") ? "Complete" : "Not Complete";
+    }
 
     return {getTitle, setTitle, getDescription, setDescription, getdueDate, setdueDate, 
-            getpriority, setpriority, printTask};
+            getpriority, setpriority, printTask, getProject, setProject, getStatus,
+            toggleStatus};
 }
 
 export {toDoTask};

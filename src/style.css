@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+.handjet-coolfont{
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+
+*{
+    font-family: "Handjet", "monospace";
+    margin: 0;
+    padding: 0;
+}
+
+.pageTitle{
+    text-align: center;
+    font-size: 2em;
+    background-color:black;
+    color: white;
+    padding: 1%;
+}
+
+.pageContent{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100vh;
+}
+
+.pageContent>div{
+    border: 1px solid blue;
+}
