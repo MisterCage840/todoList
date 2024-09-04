@@ -7,7 +7,13 @@ const project = function (name){
     const getName = ()=> name;
     const setName = (newName) => name = newName;
     
-    const printtoDoList= () => toDoList.forEach(task => console.log(task.printTask()));
+    let list ="";
+    const printtoDoList= () =>{
+        toDoList.forEach(task => {
+        list+= task.getTitle()+ "<br>";
+    })
+    return list;
+    };
     const addtoDoList = (toDoTaskObj) => toDoList.push(toDoTaskObj);
 
     const addtoCompletedtoDoList = (completeTask) => completedtoDoList.push(completeTask);

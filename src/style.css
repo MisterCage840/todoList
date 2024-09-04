@@ -3,7 +3,7 @@
 .handjet-coolfont{
   font-family: "Handjet", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "ELGR" 1,
@@ -12,6 +12,7 @@
 
 *{
     font-family: "Handjet", "monospace";
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -31,5 +32,102 @@
 }
 
 .pageContent>div{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    border-radius: 2px;
+}
+
+.projectsContainer{
+    padding: 1%; 
+    background: rgba(198,198,198,1);
+    border-radius: 2px;
+}
+
+.projectsContainer h1{
+    font-size: 3rem;
+}
+
+.listofProjects{
+    font-size: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+
+}
+
+.listofProjects>div:hover{
+    background: rgba(226,226,226,1);
+    cursor: pointer;
+}
+
+.listofProjects>div{
+    background: rgba(212,212,212,1);
+    border-radius: 4px;
+    padding: 1%;
+}
+
+.projectTasks{
+    background: rgba(198,198,198,1);
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 1%;
+    font-size: 1.35rem;
+}
+
+.taskList{
+    padding: 2%;
+    display: grid;
+    grid-template-rows: minmax(50px, 10%) max-content;
+}
+
+.functionBtns{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.functionBtns button{
+    font-size: 2rem;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.pNamePicker{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#pName{
+    font-size: 1.8rem;
+}
+
+.pNameContainer{
+    margin-left: 20%;
+}
+
+.pNameSubmitBtn{
+    font-size: 1.4rem;
+    padding: 1%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.clickedpNameSubmitBtn{
+    font-size: 1.4rem;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.hiddenMessage{
+    color: red;
+    font-size: 1.1rem;
 }
