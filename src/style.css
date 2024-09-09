@@ -131,3 +131,34 @@
     color: red;
     font-size: 1.1rem;
 }
+
+.taskUI{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 2%;
+    font-size: 1.3rem;
+}
+.taskUI>div{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+.taskUI>div>select{
+    font-size: 1.3rem;
+}
+.taskUI>div>input{
+    font-size: 1.3rem;
+}
+
+.addTaskBtnContainer{
+    margin-left: 10%;
+}
+
+.addTaskBtn{
+    font-size: 1.4rem;
+    padding: 1%;
+    background-color: white;
+    border-radius: 5px;
+}
+
